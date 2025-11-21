@@ -1,10 +1,11 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from embeddings.embedder import EmbeddingGenerator
-from search.index_manager import IndexManager
-from search.search_engine import SearchEngine
-from preprocess.cleaner import clean_text
-from search.ranking import explain_match
+from src.embeddings.embedder import EmbeddingGenerator
+from src.search.index_manager import IndexManager
+from src.search.search_engine import SearchEngine
+from src.preprocess.cleaner import clean_text
+from src.search.ranking import explain_match
+
 
 import json
 

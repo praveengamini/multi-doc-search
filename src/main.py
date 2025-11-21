@@ -1,9 +1,10 @@
-from preprocess.loader import load_documents
-from preprocess.cleaner import clean_text
-from preprocess.metadata import get_doc_metadata
-from embeddings.embedder import EmbeddingGenerator
-from cache.cache_manager import CacheManager
-from search.index_manager import IndexManager
+from src.preprocess.loader import load_documents
+from src.preprocess.cleaner import clean_text
+from src.preprocess.metadata import get_doc_metadata
+from src.embeddings.embedder import EmbeddingGenerator
+from src.cache.cache_manager import CacheManager
+from src.search.index_manager import IndexManager
+
 import os
 
 def main():
