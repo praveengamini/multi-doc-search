@@ -7,6 +7,7 @@ from src.preprocess.cleaner import clean_text
 from src.search.ranking import explain_match
 from src.search.query_expansion import expand_query_text
 from src.search.reranker import Reranker
+from fastapi.middleware.cors import CORSMiddleware
 
 import json
 
@@ -15,6 +16,13 @@ import json
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # Load index
 index_manager = IndexManager()
 index_manager.load_index("vector.index")
