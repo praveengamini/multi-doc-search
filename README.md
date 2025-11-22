@@ -276,7 +276,7 @@ python src/preprocess/download_data.py
 ### 3️⃣ Build Embeddings + Cache + Index
 
 ```bash
-python src/main.py
+python -m src.main
 ```
 
 You'll see:
@@ -374,3 +374,4 @@ This makes the system closer to a real-world retrieval engine.
 | Bonus Batch Embedding Module | ✔ |
 | Good Code Structure | ✔ |
 | Modular Files | ✔ |
+
